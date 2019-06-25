@@ -19,15 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
-            <intent-filter android:autoVerify="true">
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+            <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
-
-                <data
-                        android:host="ledhis.in"
-                        android:scheme="https"
-                        android:pathPrefix="/id"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"
+                      android:host="www.medos.com"
+                      android:pathPrefix="/d"/>
             </intent-filter>
         </activity>
     </application>
